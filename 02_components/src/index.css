@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.card{
+  background-color: rgb(244, 3, 3);
+  color: white;
+  border-radius: 10px;
+  margin: 50ox;
+  padding: 40px;
+
+}
+
+.Components{
+    background-color: rgb(244, 3, 3);
+  color: white;
+  border-radius: 10px;
+  margin: 50ox;
+  padding: 40px;
+}

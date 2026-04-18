@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.parent {
+  width: 100%;
+  display: flex;
+}
+
+.card {
+  background-color: rgb(229, 198, 198);
+  height: 300px;
+  width: 280px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.top {
+  background-color: rgb(203, 230, 239);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 5px;
+  height: 220px;
+}
+
+.bottom {
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+  display: flex
+}
+
+.bottom button{
+  padding: 2px;
+  margin-left: 145px;
+}
+

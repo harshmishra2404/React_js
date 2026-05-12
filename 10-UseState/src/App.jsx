@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import UseState02 from './UseState02';
 
 const App = () => {
   const [Count, setCount] = useState(0);
@@ -10,17 +11,11 @@ const App = () => {
   }
 
   function IncreaseByFour() {
-    setCount(prev => prev + 1)
-    setCount(prev => prev + 1)
-    setCount(prev => prev + 1)
-    setCount(prev => prev + 1)
+    setCount(prev => prev + 4)
   }
 
   function DecreaseByFour() {
-    setCount(prev => prev - 1)
-    setCount(prev => prev - 1)
-    setCount(prev => prev - 1)
-    setCount(prev => prev - 1)
+    setCount(prev => prev - 4)
   }
 
   function MultiplicationByFour() {
@@ -32,41 +27,41 @@ const App = () => {
   }
 
   const [color, setColor] = useState('red')
-  function ChangeBlue(){
+  function ChangeBlue() {
     setColor('Blue')
   }
-  function ChangeOrange(){
+  function ChangeOrange() {
     setColor('Orange')
   }
 
-  const [brand1 , setBrand] = useState('Ferrari')
-  function changeBrand(){
+  const [brand1, setBrand] = useState('Ferrari')
+  function changeBrand() {
     setBrand('Toyota')
     console.log("Change Brand is Called")
   }
 
 
 
-  const [Car , setCar] = useState({
-    Brand2 : "Ferrari",
-     Model : "La Ferrari" , 
-     year : "2019", 
-     color: "Red"
+  const [Car, setCar] = useState({
+    Brand2: "Ferrari",
+    Model: "La Ferrari",
+    year: "2019",
+    color: "Red"
   })
-  function changeModel(){
-    setCar((prev)=>{
-      return{...prev , Model:"Enzzo"}
+  function changeModel() {
+    setCar((prev) => {
+      return { ...prev, Model: "Enzzo" }
     })
     console.log("Change Model is Called")
   }
-  function changeYear(){
-    setCar((prev)=>{
-      return{...prev, year : "2025"}
+  function changeYear() {
+    setCar((prev) => {
+      return { ...prev, year: "2025" }
     })
   }
-  function changeColor(){
-    setCar((prev)=>{
-      return {...prev, color:'Orange'}
+  function changeColor() {
+    setCar((prev) => {
+      return { ...prev, color: 'Orange' }
     })
   }
 
@@ -103,12 +98,16 @@ const App = () => {
           My Ferrari
         </h1>
         <h3>
-          I want Ferrari <span style={{color:'orange'}}>{Car.Model}</span> and it's production in <span style={{color:'red'}}>{Car.year}</span> the color is <span style={{color:'palegreen'}}>{Car.color}</span>
+          I want Ferrari <span style={{ color: 'orange' }}>{Car.Model}</span> and it's production in <span style={{ color: 'red' }}>{Car.year}</span> the color is <span style={{ color: 'palegreen' }}>{Car.color}</span>
         </h3>
         <button onClick={changeModel}> Change Model Name to Enzzo </button>
         <button onClick={changeYear}>year</button>
         <button onClick={changeColor}>change to Orange</button>
-        
+
+      </div>
+
+      <div>
+        <UseState02 />
       </div>
     </div>
   )

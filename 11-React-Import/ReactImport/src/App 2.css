@@ -1,0 +1,21 @@
+.headings {
+  background-color: red;
+  color: rgb(0, 0, 0);
+  height: 80px;
+  align-content: center;
+}
+.export {
+  background-color: chartreuse;
+  height: 210px;
+}
+.headear {
+  background-color: chartreuse;
+  height: 200px;
+}
+
+.h1 h1{
+    color: black;
+}
+.h2 h1{
+    color: red;
+}

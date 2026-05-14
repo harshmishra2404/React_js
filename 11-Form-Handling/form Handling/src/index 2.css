@@ -1,0 +1,17 @@
+input,button{
+    padding: 10px;
+    margin: 20px;
+    background-color: black;
+}
+input{
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+
+}
+*{
+    background-color: rgb(200, 182, 92);
+    color: black;
+}
+button{
+    color: white;
+}

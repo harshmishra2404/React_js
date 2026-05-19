@@ -1,0 +1,16 @@
+.house {
+  border: 3px solid black;
+  padding: 20px;
+  margin: 20px;
+  background-color: yellow;
+  width: 400px;
+  font-size: x-large;
+}
+.Leader {
+  background-color: lightblue;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: aqua;
+  color: rgb(255, 0, 0);
+  font-size: xx-large;
+}
